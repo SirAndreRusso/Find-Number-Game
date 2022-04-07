@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B4E1819C27FE1C82008FB4E9 /* Guess Number.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Guess Number.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4E1819C27FE1C82008FB4E9 /* Find Numbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Find Numbers.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4E1819F27FE1C82008FB4E9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4E181A127FE1C82008FB4E9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B4E181A627FE1C82008FB4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				B4FE5E9427FF8589002DFD18 /* .gitignore */,
-				B4E1819E27FE1C82008FB4E9 /* Guess Number */,
+				B4E1819E27FE1C82008FB4E9 /* Find Numbers */,
 				B4E1819D27FE1C82008FB4E9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,12 +53,12 @@
 		B4E1819D27FE1C82008FB4E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B4E1819C27FE1C82008FB4E9 /* Guess Number.app */,
+				B4E1819C27FE1C82008FB4E9 /* Find Numbers.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		B4E1819E27FE1C82008FB4E9 /* Guess Number */ = {
+		B4E1819E27FE1C82008FB4E9 /* Find Numbers */ = {
 			isa = PBXGroup;
 			children = (
 				B4E1819F27FE1C82008FB4E9 /* AppDelegate.swift */,
@@ -70,15 +70,15 @@
 				B4E181AD27FE1C83008FB4E9 /* Info.plist */,
 				B4FE5E9027FE436C002DFD18 /* Game.swift */,
 			);
-			path = "Guess Number";
+			path = "Find Numbers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		B4E1819B27FE1C82008FB4E9 /* Guess Number */ = {
+		B4E1819B27FE1C82008FB4E9 /* Find Numbers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B4E181B027FE1C83008FB4E9 /* Build configuration list for PBXNativeTarget "Guess Number" */;
+			buildConfigurationList = B4E181B027FE1C83008FB4E9 /* Build configuration list for PBXNativeTarget "Find Numbers" */;
 			buildPhases = (
 				B4E1819827FE1C82008FB4E9 /* Sources */,
 				B4E1819927FE1C82008FB4E9 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = "Guess Number";
+			name = "Find Numbers";
 			productName = "Guess Number";
-			productReference = B4E1819C27FE1C82008FB4E9 /* Guess Number.app */;
+			productReference = B4E1819C27FE1C82008FB4E9 /* Find Numbers.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -108,7 +108,7 @@
 					};
 				};
 			};
-			buildConfigurationList = B4E1819727FE1C82008FB4E9 /* Build configuration list for PBXProject "Guess Number" */;
+			buildConfigurationList = B4E1819727FE1C82008FB4E9 /* Build configuration list for PBXProject "Find Numbers" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -121,7 +121,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				B4E1819B27FE1C82008FB4E9 /* Guess Number */,
+				B4E1819B27FE1C82008FB4E9 /* Find Numbers */,
 			);
 		};
 /* End PBXProject section */
@@ -297,7 +297,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z4S8VL3GHH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Guess Number/Info.plist";
+				INFOPLIST_FILE = "Find Numbers/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -325,7 +325,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = Z4S8VL3GHH;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Guess Number/Info.plist";
+				INFOPLIST_FILE = "Find Numbers/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -347,7 +347,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		B4E1819727FE1C82008FB4E9 /* Build configuration list for PBXProject "Guess Number" */ = {
+		B4E1819727FE1C82008FB4E9 /* Build configuration list for PBXProject "Find Numbers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4E181AE27FE1C83008FB4E9 /* Debug */,
@@ -356,7 +356,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B4E181B027FE1C83008FB4E9 /* Build configuration list for PBXNativeTarget "Guess Number" */ = {
+		B4E181B027FE1C83008FB4E9 /* Build configuration list for PBXNativeTarget "Find Numbers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B4E181B127FE1C83008FB4E9 /* Debug */,
