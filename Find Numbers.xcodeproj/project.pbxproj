@@ -12,6 +12,7 @@
 		B4E181A727FE1C82008FB4E9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E181A527FE1C82008FB4E9 /* Main.storyboard */; };
 		B4E181A927FE1C83008FB4E9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4E181A827FE1C83008FB4E9 /* Assets.xcassets */; };
 		B4E181AC27FE1C83008FB4E9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4E181AA27FE1C83008FB4E9 /* LaunchScreen.storyboard */; };
+		B4E8477B281DE54100C6FE1E /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4E8477A281DE54100C6FE1E /* MenuViewController.swift */; };
 		B4FE5E8F27FE3E51002DFD18 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE5E8E27FE3E51002DFD18 /* GameViewController.swift */; };
 		B4FE5E9127FE436C002DFD18 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4FE5E9027FE436C002DFD18 /* Game.swift */; };
 		B4FE5E9527FF8589002DFD18 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = B4FE5E9427FF8589002DFD18 /* .gitignore */; };
@@ -25,6 +26,7 @@
 		B4E181A827FE1C83008FB4E9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4E181AB27FE1C83008FB4E9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B4E181AD27FE1C83008FB4E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B4E8477A281DE54100C6FE1E /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B4FE5E8E27FE3E51002DFD18 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		B4FE5E9027FE436C002DFD18 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		B4FE5E9427FF8589002DFD18 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				B4E1819F27FE1C82008FB4E9 /* AppDelegate.swift */,
 				B4E181A127FE1C82008FB4E9 /* SceneDelegate.swift */,
 				B4E181A527FE1C82008FB4E9 /* Main.storyboard */,
+				B4E8477A281DE54100C6FE1E /* MenuViewController.swift */,
 				B4FE5E8E27FE3E51002DFD18 /* GameViewController.swift */,
 				B4E181A827FE1C83008FB4E9 /* Assets.xcassets */,
 				B4E181AA27FE1C83008FB4E9 /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4E181A027FE1C82008FB4E9 /* AppDelegate.swift in Sources */,
+				B4E8477B281DE54100C6FE1E /* MenuViewController.swift in Sources */,
 				B4FE5E8F27FE3E51002DFD18 /* GameViewController.swift in Sources */,
 				B4E181A227FE1C82008FB4E9 /* SceneDelegate.swift in Sources */,
 				B4FE5E9127FE436C002DFD18 /* Game.swift in Sources */,
