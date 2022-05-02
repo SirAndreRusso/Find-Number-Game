@@ -16,7 +16,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var newGameButton: UIButton!
     // Creating Game object after buttons outlets will be loaded in viewdidload
     // Создается экземпляр класса Game после загрузки аутлетов кнопок
-    lazy var game = Game(countItems: buttons.count, time: 30) { [weak self] (status, time) in
+    lazy var game = Game(countItems: buttons.count) { [weak self] (status, time) in
         guard let self = self else {return}
         self.timerLabel.text = time.secondsToString()
         self.updateInfoGame(with: status)
@@ -26,7 +26,9 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         setupScreen ()
     }
-    
+    override func viewWillDisappear(_ animated: Bool) {
+        game.stopGame()
+    }
     @IBAction func pressButton(_ sender: UIButton) {
         guard let buttonIndex = buttons.firstIndex(of: sender) else {return}
         game.check(index: buttonIndex)
