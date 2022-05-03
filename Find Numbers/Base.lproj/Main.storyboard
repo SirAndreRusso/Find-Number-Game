@@ -620,6 +620,10 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="hYP-B3-W2H" firstAttribute="top" secondItem="huP-tF-dvz" secondAttribute="top" id="Ykw-7Y-lcc"/>
+                                    <constraint firstItem="Uf9-wZ-Dhh" firstAttribute="top" secondItem="hYP-B3-W2H" secondAttribute="bottom" constant="10" id="qmp-Cs-Icy"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Krl-ow-TQk"/>
@@ -665,6 +669,7 @@
                         <outletCollection property="buttons" destination="kzw-B0-iXF" collectionClass="NSMutableArray" id="Z9m-df-q31"/>
                         <outletCollection property="buttons" destination="8Cq-Qq-fj0" collectionClass="NSMutableArray" id="srq-fz-Il1"/>
                         <outletCollection property="buttons" destination="RtC-VW-np2" collectionClass="NSMutableArray" id="yfb-eQ-VFO"/>
+                        <segue destination="LVZ-sA-a5Z" kind="presentation" identifier="recordVC" id="ERK-iR-4eJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nxs-hj-yk6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -709,7 +714,7 @@
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="24"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="RiO-8w-a3J" kind="show" id="Ai3-xT-9we"/>
+                                            <segue destination="LVZ-sA-a5Z" kind="presentation" identifier="recordVC" modalPresentationStyle="fullScreen" id="Ai3-xT-9we"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -887,18 +892,39 @@
         <!--Рекорд-->
         <scene sceneID="QMS-RX-QOy">
             <objects>
-                <viewController id="RiO-8w-a3J" sceneMemberID="viewController">
+                <viewController id="RiO-8w-a3J" customClass="RecordViewController" customModule="Find_Numbers" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zp9-jh-eK4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Текущий рекорд: " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fHY-MB-DjU">
+                                <rect key="frame" x="92" y="392.33333333333331" width="191" height="27.666666666666686"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Or8-zU-IVk"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="fHY-MB-DjU" firstAttribute="centerY" secondItem="Zp9-jh-eK4" secondAttribute="centerY" id="3Kr-fT-AmE"/>
+                            <constraint firstItem="fHY-MB-DjU" firstAttribute="centerX" secondItem="Zp9-jh-eK4" secondAttribute="centerX" id="I3y-ll-sL6"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Рекорд" id="RKJ-zb-hM7"/>
+                    <navigationItem key="navigationItem" title="Рекорд" id="RKJ-zb-hM7">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Hsd-5C-Bax">
+                            <connections>
+                                <action selector="CancelButton:" destination="RiO-8w-a3J" id="pl4-1b-yS2"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="recordLabel" destination="fHY-MB-DjU" id="tr5-0B-BUQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEd-0f-uoJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="757" y="-1183"/>
+            <point key="canvasLocation" x="1698.4000000000001" y="-1183.0049261083743"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="sbJ-KJ-j1s">
@@ -918,7 +944,28 @@
             </objects>
             <point key="canvasLocation" x="-191.19999999999999" y="-517.24137931034488"/>
         </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="p4F-jx-2WY">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="LVZ-sA-a5Z" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YPD-bY-sO3">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RiO-8w-a3J" kind="relationship" relationship="rootViewController" id="q2N-kN-yd0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6Nw-B6-zdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="756" y="-1183.0049261083743"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Ai3-xT-9we"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="secondaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>

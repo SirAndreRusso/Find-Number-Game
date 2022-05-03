@@ -32,11 +32,22 @@ class Game {
     // Число, передаваемое в лейбл, которое нужно найти среди кнопок с числами
     // The next number in lable
     var nextItem: Item?
-    // Default status of the game with observer
-    // Значение статуса по умолчанию, с наблюдателем
+    //MARK: - Default status of the game with observer and overriding of the record
+    //Значение статуса игры по умолчанию, запись нового рекорда в UserDefaults
+    
+    var isNewRecord = false
     var status: StatusGame = .start {
         didSet{
-            if status != .start{
+            if status != .start {
+                if status == .win {
+                    let newRecord = timeForGame - secondsGame
+                    let record = UserDefaults.standard.integer(forKey: keysUserDefaults.recordGame)
+                    if record == 0 || newRecord < record {
+                        UserDefaults.standard.set(newRecord, forKey: keysUserDefaults.recordGame)
+                        isNewRecord = true
+                    }
+                    
+                }
                 stopGame()
             }
         }
@@ -67,6 +78,7 @@ class Game {
     // создание необходимого количества уникальных айтемов и числа, которое необходимо найти, установка таймера
     // Preparing the game by creating uniq items and adding items in array. Creating next number to find. timer setup
     private func setupGame(){
+        isNewRecord = false
         var digits = data.shuffled()
         items.removeAll()
         while items.count < countItems {
@@ -105,8 +117,7 @@ class Game {
     
     func stopGame () {
         timer?.invalidate()
-    }
-    
+    } 
 }
 // Making timerlabel info more comfortable
 // Делаем удобное представление для timerLabel
