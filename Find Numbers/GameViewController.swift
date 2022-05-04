@@ -101,7 +101,7 @@ class GameViewController: UIViewController {
     }
     private func showAlertActionSheet(){
         let alert = UIAlertController(title: "Что вы хотите сделать далее?", message: nil, preferredStyle: .actionSheet)
-        let newGamAction = UIAlertAction(title: "Начать новую игру?", style: .default) { [weak self] (_) in
+        let newGameAction = UIAlertAction(title: "Начать новую игру?", style: .default) { [weak self] (_) in
             self?.game.newGame()
             self?.setupScreen()
         }
@@ -113,14 +113,15 @@ class GameViewController: UIViewController {
             self?.navigationController?.popViewController(animated: true)
         }
         let cancelAction = UIAlertAction(title: "Отмена", style: .cancel, handler: nil)
-        alert.addAction(newGamAction)
+        alert.addAction(newGameAction)
         alert.addAction(showRecord)
         alert.addAction(menuAction)
         alert.addAction(cancelAction)
-        if let popover = alert.popoverPresentationController {
-            popover.sourceView = statusLabel
-            present(alert, animated: true, completion: nil)
-        }
+                if let popover = alert.popoverPresentationController {
+                    popover.sourceView = newGameButton
+                }
+                    present(alert, animated: true, completion: nil)
+           
     }
 }
 

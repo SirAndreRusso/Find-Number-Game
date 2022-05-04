@@ -32,7 +32,7 @@ class Game {
     // Число, передаваемое в лейбл, которое нужно найти среди кнопок с числами
     // The next number in lable
     var nextItem: Item?
-    //MARK: - Default status of the game with observer and overriding of the record
+    // Default status of the game with observer and overriding of the record
     //Значение статуса игры по умолчанию, запись нового рекорда в UserDefaults
     
     var isNewRecord = false
@@ -117,7 +117,7 @@ class Game {
     
     func stopGame () {
         timer?.invalidate()
-    } 
+    }
 }
 // Making timerlabel info more comfortable
 // Делаем удобное представление для timerLabel

@@ -74,16 +74,16 @@
 				B4E1819F27FE1C82008FB4E9 /* AppDelegate.swift */,
 				B4E181A127FE1C82008FB4E9 /* SceneDelegate.swift */,
 				B4E181A527FE1C82008FB4E9 /* Main.storyboard */,
+				B4FE5E9027FE436C002DFD18 /* Game.swift */,
+				B4FE5E8E27FE3E51002DFD18 /* GameViewController.swift */,
 				B4E847822821918600C6FE1E /* RecordViewController.swift */,
 				B4E8477E28202A9900C6FE1E /* SettingsTableViewController.swift */,
 				B4E8477C28202A3300C6FE1E /* SelectTimeViewController.swift */,
 				B4E8478028203CED00C6FE1E /* Settings.swift */,
 				B4E8477A281DE54100C6FE1E /* MenuViewController.swift */,
-				B4FE5E8E27FE3E51002DFD18 /* GameViewController.swift */,
 				B4E181A827FE1C83008FB4E9 /* Assets.xcassets */,
 				B4E181AA27FE1C83008FB4E9 /* LaunchScreen.storyboard */,
 				B4E181AD27FE1C83008FB4E9 /* Info.plist */,
-				B4FE5E9027FE436C002DFD18 /* Game.swift */,
 			);
 			path = "Find Numbers";
 			sourceTree = "<group>";
